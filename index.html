@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Free Code Camp Survey Form</h1>
+    <p id="descrition">Thank you for taking the time to help us improve the platform</p>
+    <form action=" " method="post" id="Survey-form">
+        <fieldset>
+            <label for="name-label">Name<input type="text" id="name-label" name="name" placeholder="Enter your name" required ></label>
+            <label for="email-label">Email<input type="text" id="email-label" name="email" placeholder="Enter your email" required ></label>
+            <label for="number-label">Age (optional)<input type="number" id="number-label" name="age" placeholder="age" min="12" max="120" required ></label>
+            <label for="dropdown">Which option best describes your current role?
+                <select id="dropdown" name="current-role">
+                    <option value="" disabled selected hidden >Select current role</option>
+                    <option value="student" >Student</option>
+                    <option value="full-time" >Full Time</option>
+                    <option value="part-time">Part Time</option>
+                </select>
+            </label>
+        </fieldset>   
+        <fieldset >
+            <legend>Would you recommend freecode camp to a friend?</legend>
+                <label for="def" class="radio-checkbox"><input  type="radio" id="def" name="recommend" value="definitely"> Definitely</label>
+                <label for="maybe" class="radio-checkbox"><input type="radio" id="maybe" name="recommend" value="maybe"> May Be</label>
+                <label for="notsure" class="radio-checkbox"><input type="radio" id="notsure" name="recommend" value="notsure"> Not Sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="feature" class="feature">What is your favorite feature of Freecode camp?
+                <select id="feature" name="favorite-feature">
+                    <option value="" disabled selected hidden>Select an option</option>
+                    <option value="challenges">challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What would you like to see improved? (check all that apply)</legend>
+            <label for="front-end-p" class="radio-checkbox"><input type="checkbox" id="front-end-p" name="improvement" value="front-end-project" >Front-End-Projects</label>
+            <label for="Back-end-p" class="radio-checkbox"><input type="checkbox" id="back-end-p" name="improvement" value="Back-end-project" >Front-End-Projects</label>
+            <label for="data-vis" class="radio-checkbox"><input type="checkbox" id="data-vis" name="improvement" value="data-visualization" >Data Visualization</label>
+
+        </fieldset>
+        <fieldset>
+            <label for="comments">Any Comments or suggestions?
+                <textarea id="comments" name="comments" rows="6" cols="85%"></textarea>
+            </label>
+        </fieldset>
+        
+        <fieldset><input class="submit" type="submit" id="submit"></fieldset>
+    
+    </form>
+</body>
+
+
+
+
+
